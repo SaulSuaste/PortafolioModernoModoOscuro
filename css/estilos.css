@@ -334,9 +334,18 @@ img{
 }
 
 .button__icon{
-    font-size: 1.25rem;
+    font-size: 0.8rem;
     margin-left: var(--mb-0-5);
     transition: 0.3s;
+}
+
+.button--white{
+    background-color: #fff;
+    color: var(--first-color);
+}
+.button--white:hover{
+    background-color: #fff;
+    color: var(--first-color-alt);
 }
 
 .button--flex{
@@ -689,6 +698,207 @@ img{
     opacity: 1;
     visibility: visible;
 }
+
+
+/* -------------------------- Portafolio -------------------------- */
+.portfolio__container{
+    overflow: initial;
+}
+
+.portfolio__content{
+    padding: 0 1.5rem;
+}
+
+.portfolio__img{
+    margin-top: 0.3rem;
+    width: 265px;
+    height: 265px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.portfolio__img:hover{
+    cursor: grab;
+    transform: scale(1.04);
+}
+.portfolio__img:active{
+    cursor: grabbing;
+}
+
+.portfolio__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description{
+    margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__button:hover .button__icon{
+    transform: translateX(0.25rem);
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid var(--first-color)!important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover{
+    background: var(--first-color)!important;
+}
+
+
+/* -------------------------- Portafolio -------------------------- */
+.project{
+    text-align: center;
+}
+
+.project__bg{
+    background-color: var(--first-color-second);
+    padding-top: 3rem;
+}
+
+.project__title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.project__description{
+    margin-bottom: var(--mb-1-5);
+}
+
+.project__title,
+.project__description{
+    color: #fff;
+}
+
+.project__img{
+    width: 232px;
+    justify-self: center;
+}
+
+
+/* -------------------------- Testimonios -------------------------- */
+.testimonial__data,
+.testimonial__header{
+    display: flex;
+}
+
+.testimonial__data{
+    justify-content: space-between;
+    margin-bottom: var(--mb-1);
+}
+
+.testimonial__img-content{
+    display: flex;
+    margin-right: var(--mb-0-75);
+    width: 80px;
+    height: 80px;
+}
+
+.testimonial__img-content .testimonial__img{
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial__content:hover{
+    cursor: grab;
+    /* transform: scale(1.04); */
+}
+.testimonial__content:active{
+    cursor: grabbing;
+}
+
+.testimonial__name{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.testimonial__client{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.testimonial__description{
+    margin-bottom: var(--mb-2-5);
+}
+
+.testimonial__icon-star{
+    color: var(--first-color);
+}
+
+
+/* -------------------------- Contactame -------------------------- */
+.contact__container{
+    row-gap: 3rem;
+    margin-bottom: var(--mb-2);
+}
+
+.contact__information{
+    display: flex;
+    margin-bottom: var(--mb-2);
+}
+
+.contact__icon{
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-right: var(--mb-0-75);
+}
+
+.contact__title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.contact__subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.contact__content{
+    background-color: var(--input-color);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem 0.25rem;
+}
+
+.contact__label{
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+}
+
+.contact__input{
+    width: 100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem 0.5rem 0;
+    resize: none;
+}
+
+
+
+
 
 
 
